@@ -1,0 +1,191 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 1048576 bytes for AllocateHeap
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (memory/allocation.inline.hpp:61), pid=21260, tid=0x0000000000004edc
+#
+# JRE version:  (8.0_181-b13) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.181-b13 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000000003636000):  JavaThread "Unknown thread" [_thread_in_vm, id=20188, stack(0x0000000003430000,0x0000000003530000)]
+
+Stack: [0x0000000003430000,0x0000000003530000]
+[error occurred during error reporting (printing stack bounds), id 0xc0000005]
+
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x0000000003636000 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=20188, stack(0x0000000003430000,0x0000000003530000)]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap:
+ PSYoungGen      total 38400K, used 665K [0x00000000d5d80000, 0x00000000d8800000, 0x0000000100000000)
+  eden space 33280K, 2% used [0x00000000d5d80000,0x00000000d5e26670,0x00000000d7e00000)
+  from space 5120K, 0% used [0x00000000d8300000,0x00000000d8300000,0x00000000d8800000)
+  to   space 5120K, 0% used [0x00000000d7e00000,0x00000000d7e00000,0x00000000d8300000)
+ ParOldGen       total 87552K, used 0K [0x0000000081800000, 0x0000000086d80000, 0x00000000d5d80000)
+  object space 87552K, 0% used [0x0000000081800000,0x0000000081800000,0x0000000086d80000)
+ Metaspace       used 775K, capacity 4480K, committed 4480K, reserved 1056768K
+  class space    used 76K, capacity 384K, committed 384K, reserved 1048576K
+
+Card table byte_map: [0x0000000012af0000,0x0000000012ef0000] byte_map_base: 0x00000000126e4000
+
+Marking Bits: (ParMarkBitMap*) 0x000000006a952d00
+ Begin Bits: [0x00000000135a0000, 0x0000000015540000)
+ End Bits:   [0x0000000015540000, 0x00000000174e0000)
+
+Polling page: 0x0000000000d70000
+
+CodeCache: size=245760Kb used=328Kb max_used=328Kb free=245431Kb
+ bounds [0x0000000003730000, 0x00000000039a0000, 0x0000000012730000]
+ total_blobs=58 nmethods=0 adapters=38
+ compilation: enabled
+
+Compilation events (0 events):
+No events
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.070 loading class java/lang/Short
+Event: 0.070 loading class java/lang/Short done
+Event: 0.070 loading class java/lang/Integer
+Event: 0.070 loading class java/lang/Integer done
+Event: 0.070 loading class java/lang/Long
+Event: 0.070 loading class java/lang/Long done
+Event: 0.071 loading class java/lang/NullPointerException
+Event: 0.071 loading class java/lang/NullPointerException done
+Event: 0.071 loading class java/lang/ArithmeticException
+Event: 0.071 loading class java/lang/ArithmeticException done
+
+
+Dynamic libraries:
+0x00007ff6c5740000 - 0x00007ff6c5777000 	D:\Program Files\Java\jdk1.8.0_181\bin\java.exe
+0x00007ffe5f1b0000 - 0x00007ffe5f3a8000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ffe5d450000 - 0x00007ffe5d50f000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ffe5cd10000 - 0x00007ffe5cfe2000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ffe5e580000 - 0x00007ffe5e62e000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ffe5d3b0000 - 0x00007ffe5d44e000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ffe5e340000 - 0x00007ffe5e3dc000 	C:\WINDOWS\System32\sechost.dll
+0x00007ffe5d5f0000 - 0x00007ffe5d714000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ffe5e030000 - 0x00007ffe5e1d1000 	C:\WINDOWS\System32\USER32.dll
+0x00007ffe5c940000 - 0x00007ffe5c962000 	C:\WINDOWS\System32\win32u.dll
+0x00007ffe5e310000 - 0x00007ffe5e33b000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ffe5cff0000 - 0x00007ffe5d0ff000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ffe5cb10000 - 0x00007ffe5cbad000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ffe5c970000 - 0x00007ffe5ca70000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ffe5ae60000 - 0x00007ffe5b0fa000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.1110_none_60b5254171f9507e\COMCTL32.dll
+0x00007ffe5f0a0000 - 0x00007ffe5f0d0000 	C:\WINDOWS\System32\IMM32.DLL
+0x0000000180000000 - 0x00000001800a0000 	C:\WINDOWS\LVUAAgentInstBaseRoot\system32\Vozokopot.dll
+0x00007ffe5d510000 - 0x00007ffe5d5ea000 	C:\WINDOWS\System32\COMDLG32.dll
+0x00007ffe5e760000 - 0x00007ffe5eab5000 	C:\WINDOWS\System32\combase.dll
+0x00007ffe5d2a0000 - 0x00007ffe5d34d000 	C:\WINDOWS\System32\shcore.dll
+0x00007ffe5d350000 - 0x00007ffe5d3a5000 	C:\WINDOWS\System32\SHLWAPI.dll
+0x00007ffe5d720000 - 0x00007ffe5de65000 	C:\WINDOWS\System32\SHELL32.dll
+0x00007ffe52e60000 - 0x00007ffe52fa8000 	C:\WINDOWS\LVUAAgentInstBaseRoot\system32\SauternesCore.dll
+0x00007ffe5e1e0000 - 0x00007ffe5e30a000 	C:\WINDOWS\System32\ole32.dll
+0x00007ffe5e3e0000 - 0x00007ffe5e44b000 	C:\WINDOWS\System32\WS2_32.dll
+0x000000006dc40000 - 0x000000006dcda000 	C:\WINDOWS\LVUAAgentInstBaseRoot\system32\SteinwayMSVCRT.dll
+0x000000006db70000 - 0x000000006dc40000 	C:\WINDOWS\LVUAAgentInstBaseRoot\system32\SteinwayMSVCSTL.dll
+0x00007ffe52880000 - 0x00007ffe52e52000 	C:\WINDOWS\LVUAAgentInstBaseRoot\system32\MozartBreathCore.dll
+0x00007ffe5e690000 - 0x00007ffe5e75d000 	C:\WINDOWS\System32\OLEAUT32.dll
+0x00007ffe527b0000 - 0x00007ffe527c9000 	C:\WINDOWS\SYSTEM32\NETAPI32.dll
+0x00007ffe52790000 - 0x00007ffe527ad000 	C:\WINDOWS\SYSTEM32\MPR.dll
+0x00007ffe526f0000 - 0x00007ffe52788000 	C:\WINDOWS\SYSTEM32\WINSPOOL.DRV
+0x00007ffe5ad00000 - 0x00007ffe5ad14000 	C:\WINDOWS\SYSTEM32\WTSAPI32.dll
+0x00007ffe5bca0000 - 0x00007ffe5bcdb000 	C:\WINDOWS\SYSTEM32\IPHLPAPI.DLL
+0x00007ffe5bce0000 - 0x00007ffe5bdab000 	C:\WINDOWS\SYSTEM32\DNSAPI.dll
+0x00007ffe5bdb0000 - 0x00007ffe5bdbc000 	C:\WINDOWS\SYSTEM32\NETUTILS.DLL
+0x00007ffe523b0000 - 0x00007ffe523d8000 	C:\WINDOWS\SYSTEM32\SRVCLI.DLL
+0x00007ffe5d290000 - 0x00007ffe5d298000 	C:\WINDOWS\System32\NSI.dll
+0x00007ffe59d80000 - 0x00007ffe59daf000 	C:\WINDOWS\SYSTEM32\dwmapi.dll
+0x00007ffe4d530000 - 0x00007ffe4d551000 	C:\WINDOWS\LVUAAgentInstBaseRoot\system32\MozartBreathWWW.dll
+0x00007ffe4d500000 - 0x00007ffe4d523000 	C:\WINDOWS\LVUAAgentInstBaseRoot\system32\MozartBreathFw.dll
+0x00007ffe4d490000 - 0x00007ffe4d4f3000 	C:\WINDOWS\LVUAAgentInstBaseRoot\system32\MozartBreathFile.dll
+0x00007ffe4d440000 - 0x00007ffe4d485000 	C:\WINDOWS\LVUAAgentInstBaseRoot\system32\MozartBreathPrint.dll
+0x00007ffe4d430000 - 0x00007ffe4d437000 	C:\WINDOWS\SYSTEM32\MSIMG32.dll
+0x00007ffe4d3e0000 - 0x00007ffe4d42d000 	C:\WINDOWS\LVUAAgentInstBaseRoot\system32\MozartBreathBolo.dll
+0x00007ffe4d140000 - 0x00007ffe4d155000 	C:\WINDOWS\LVUAAgentInstBaseRoot\system32\MozartBreathProtect.dll
+0x000000006db60000 - 0x000000006db6c000 	D:\Program Files (x86)\360\360Safe\safemon\SafeWrapper.dll
+0x00007ffe4d0f0000 - 0x00007ffe4d11b000 	C:\WINDOWS\SYSTEM32\MAPI32.DLL
+0x00007ffe5f150000 - 0x00007ffe5f16d000 	C:\WINDOWS\System32\imagehlp.dll
+0x00007ffe5ae40000 - 0x00007ffe5ae52000 	C:\WINDOWS\SYSTEM32\kernel.appcore.dll
+0x00007ffe4cee0000 - 0x00007ffe4cf81000 	D:\Program Files (x86)\360\360Safe\safemon\libzdtp64.dll
+0x00007ffe5c440000 - 0x00007ffe5c44a000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x000000006c640000 - 0x000000006c712000 	D:\Program Files\Java\jdk1.8.0_181\jre\bin\msvcr100.dll
+0x000000006a130000 - 0x000000006a9d2000 	D:\Program Files\Java\jdk1.8.0_181\jre\bin\server\jvm.dll
+0x0000000000d30000 - 0x0000000000d38000 	C:\WINDOWS\System32\PSAPI.DLL
+0x00007ffe3f3d0000 - 0x00007ffe3f3d9000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007ffe46f50000 - 0x00007ffe46f77000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x000000006c630000 - 0x000000006c63f000 	D:\Program Files\Java\jdk1.8.0_181\jre\bin\verify.dll
+0x000000006c600000 - 0x000000006c629000 	D:\Program Files\Java\jdk1.8.0_181\jre\bin\java.dll
+0x000000006c5b0000 - 0x000000006c5d3000 	D:\Program Files\Java\jdk1.8.0_181\jre\bin\instrument.dll
+0x00007ffe59a70000 - 0x00007ffe59ae4000 	C:\WINDOWS\SYSTEM32\Wlanapi.dll
+0x00007ffe5c7f0000 - 0x00007ffe5c80f000 	C:\WINDOWS\SYSTEM32\profapi.dll
+0x000000006c5e0000 - 0x000000006c5f6000 	D:\Program Files\Java\jdk1.8.0_181\jre\bin\zip.dll
+
+VM Arguments:
+jvm_args: -XX:TieredStopAtLevel=1 -Xverify:none -Dspring.output.ansi.enabled=always -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=62636 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Djava.rmi.server.hostname=localhost -Dspring.liveBeansView.mbeanDomain -Dspring.application.admin.enabled=true -javaagent:D:\Program Files\JetBrains\IntelliJ IDEA 2018.2.1\lib\idea_rt.jar=62637:D:\Program Files\JetBrains\IntelliJ IDEA 2018.2.1\bin -Dfile.encoding=UTF-8 
+java_command: com.tcy.smartai.SmartAiApplication
+java_class_path (initial): D:\Program Files\Java\jdk1.8.0_181\jre\lib\charsets.jar;D:\Program Files\Java\jdk1.8.0_181\jre\lib\deploy.jar;D:\Program Files\Java\jdk1.8.0_181\jre\lib\ext\access-bridge-64.jar;D:\Program Files\Java\jdk1.8.0_181\jre\lib\ext\bcprov-ext-jdk15on-160.jar;D:\Program Files\Java\jdk1.8.0_181\jre\lib\ext\cldrdata.jar;D:\Program Files\Java\jdk1.8.0_181\jre\lib\ext\dnsns.jar;D:\Program Files\Java\jdk1.8.0_181\jre\lib\ext\jaccess.jar;D:\Program Files\Java\jdk1.8.0_181\jre\lib\ext\jfxrt.jar;D:\Program Files\Java\jdk1.8.0_181\jre\lib\ext\localedata.jar;D:\Program Files\Java\jdk1.8.0_181\jre\lib\ext\nashorn.jar;D:\Program Files\Java\jdk1.8.0_181\jre\lib\ext\sunec.jar;D:\Program Files\Java\jdk1.8.0_181\jre\lib\ext\sunjce_provider.jar;D:\Program Files\Java\jdk1.8.0_181\jre\lib\ext\sunmscapi.jar;D:\Program Files\Java\jdk1.8.0_181\jre\lib\ext\sunpkcs11.jar;D:\Program Files\Java\jdk1.8.0_181\jre\lib\ext\zipfs.jar;D:\Program Files\Java\jdk1.8.0_181\jre\lib\javaws.jar;D:\Program Files\Java\jdk1.8.0_181\jre\lib\jce.jar;D:\Program Files\Java\jdk1.8.0_181\jre\lib\jfr.jar;D:\Program Files\Java\jdk1.8.0_181\jre\lib\jfxswt.jar;D:\Program Files\Java\jdk1.8.0_181\jre\lib\jsse.jar;D:\Program Files\Java\jdk1.8.0_181\jre\lib\management-agent.jar;D:\Program Files\Java\jdk1.8.0_181\jre\lib\plugin.jar;D:\Program Files\Java\jdk1.8.0_181\jre\lib\resources.jar;D:\Program Files\Java\jdk1.8.0_181\jre\lib\rt.jar;E:\workspace\spring\smartai\smartai-api\target\classes;D:\Maven\repository\org\springframework\boot\spring-boot-starter-web\2.3.3.RELEASE\spring-boot-starter-web-2.3.3.RELEASE.jar;D:\Maven\repository\org\springframework\boot\spring-boot-starter\2.3.3.RELEASE\spring-boot-starter-2.3.3.RELEASE.jar;D:\Maven\repository\org\springframework\boot\spring-boot\2.3.3.RELEASE\spring-boot-2.3.3.RELEASE.jar;D:\Maven\repository\org\springframework\boot\spring-boot-autoconfigure\2.3.3.RELEASE\spring-boot-autoconfigure-2.3.3.RELEASE.jar;D:\Maven\repository\org\springframework\boot\spr
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=D:\Program Files\Java\jdk1.8.0_181
+CLASSPATH=.;D:\Program Files\Java\jdk1.8.0_181\lib;D:\Program Files\Java\jdk1.8.0_181\lib\tools.jar
+PATH=C:\Program Files (x86)\Intel\iCLS Client\;D:\Program Files\Java\jdk1.8.0_181\jre\bin;D:\Program Files\Java\jdk1.8.0_181\bin;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\soft\work\mysql-5.6.38-winx64\bin;C:\WINDOWS\System32\OpenSSH\;C:\ProgramData\Oracle\Java\javapath;D:\Program Files\TortoiseSVN\bin;d:\Program Files\Git\cmd;D:\soft\work\gradle-4.10.1\bin;D:\soft\work\apache-maven-3.6.2\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\tuchengyi\AppData\Local\Microsoft\WindowsApps;D:\Program Files\Microsoft VS Code\bin;
+USERNAME=tuchengyi
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 142 Stepping 9, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10.0 , 64 bit Build 19041 (10.0.19041.2546)
+
+CPU:total 4 (initial active 4) (2 cores per cpu, 2 threads per core) family 6 model 142 stepping 9, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, 3dnowpref, lzcnt, ht, tsc, tscinvbit, bmi1, bmi2, adx
+
+Memory: 4k page, physical 8284648k(486176k free), swap 17102308k(5156k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (25.181-b13) for windows-amd64 JRE (1.8.0_181-b13), built on Jul  7 2018 04:01:33 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Wed Mar 29 22:22:50 2023
+elapsed time: 0 seconds (0d 0h 0m 0s)
+

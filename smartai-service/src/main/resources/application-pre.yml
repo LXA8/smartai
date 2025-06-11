@@ -1,0 +1,25 @@
+server:
+  port: 80
+
+spring:
+  data:
+    mongodb:
+        #uri: mongodb://ai_admin:123456@127.0.0.1:27017/ai
+         uri: mongodb://ai_admin:123456@mongodb-svc:27017/ai
+
+logging:
+  level:DEBUG
+  path:./log
+
+ok:
+  http:
+    connect-timeout: 30
+    read-timeout: 30
+    write-timeout: 30
+    max-idle-connections: 200
+    keep-alive-duration: 300
+
+path:
+  url:
+    image: http://127.0.0.1/
+    trace: http://127.0.0.1/test/getFeature
