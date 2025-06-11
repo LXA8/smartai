@@ -23,12 +23,11 @@ public class UserController {
     @RequestMapping("/login")
     @ResponseBody
     public Map login() {
-        logger.info("用户登录,user:{}", "user");
+        logger.info("用户登录,user:{}", "yonghuhsda");
         Map result = new HashMap();
-
-
         result.put("returncode", "0");
         result.put("errormsg", "ok");
+
         return result;
     }
 }
