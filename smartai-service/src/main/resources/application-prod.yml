@@ -22,3 +22,15 @@ path:
   url:
     image: http://114.55.219.32:8002/
     trace: http://127.0.0.1:5000/PersonnelTracking
+
+knife4j:
+  enable: true
+  openapi:
+    title: "接口文档"
+    version: 1.0
+    group:
+      default:
+        api-rule: package
+        api-rule-resources:
+          - com.tcy.smartai.api
+

@@ -1,2 +1,2 @@
-2025-06-11 12:24:46.371 [main] ERROR com.tcy.smartai.service.common.OkHttpCli - http request fail:Failed to connect to /127.0.0.1:80
-2025-06-11 12:29:30.713 [main] ERROR com.tcy.smartai.service.common.OkHttpCli - http request fail:Failed to connect to /127.0.0.1:8080
+2025-06-12 15:31:43.442 [main] ERROR com.tcy.smartai.service.common.OkHttpCli - http request fail:Failed to connect to /127.0.0.1:8080
+2025-06-12 15:42:55.105 [main] ERROR com.tcy.smartai.service.common.OkHttpCli - http request fail:Failed to connect to /127.0.0.1:8080

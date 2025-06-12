@@ -1,5 +1,4 @@
 package com.tcy.smartai.api;
-
 import com.alibaba.fastjson.JSON;
 import com.tcy.smartai.service.common.CommonResponse;
 import com.tcy.smartai.service.enums.ErrorCodeEnum;
@@ -8,6 +7,8 @@ import com.tcy.smartai.service.service.CameraService;
 import com.tcy.smartai.service.service.StatisticService;
 import com.tcy.smartai.service.vo.CameraVo;
 import com.tcy.smartai.service.vo.StatisticRespVo;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +19,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Map;
 
 @Controller
+@Api(tags = "摄像头管理")
 @RequestMapping("/api/v1/cameras")
 public class CameraController {
     public static Logger logger = LoggerFactory.getLogger(CameraController.class);
@@ -31,6 +33,7 @@ public class CameraController {
 
     @PostMapping("")
     @ResponseBody
+    @ApiOperation("添加摄像头")
     public CommonResponse addCamera(@RequestBody CameraVo cameraVo) {
         logger.info("添加摄像头配置,CameraVo:{}", JSON.toJSONString(cameraVo));
         if(StringUtils.isEmpty(cameraVo)){
