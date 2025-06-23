@@ -4,8 +4,8 @@ server:
 spring:
   data:
     mongodb:
-        #uri: mongodb://ai_admin:123456@127.0.0.1:27017/ai
-         uri: mongodb://ai_admin:123456@mongodb-svc:27017/ai
+        uri: mongodb://ai_admin:123456@127.0.0.1:27017/ai
+         #uri: mongodb://ai_admin:123456@mongodb-svc:27017/ai
 
 logging:
   level:DEBUG

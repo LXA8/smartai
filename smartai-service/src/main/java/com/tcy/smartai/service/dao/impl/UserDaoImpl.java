@@ -20,7 +20,7 @@ public class UserDaoImpl implements UserDao {
 
     @Override
     public void addUser(User user) {
-        mongoTemplate.save(user);
+        mongoTemplate.insert(user);
 
     }
 

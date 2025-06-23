@@ -48,8 +48,8 @@
     </appender>
 
     <root level="${logging.level}">
-        <!--<appender-ref ref="STDOUT"/>-->
-        <appender-ref ref="FILEOUT_ALL" />
+        <appender-ref ref="STDOUT"/>
+<!--        <appender-ref ref="FILEOUT_ALL" />-->
         <appender-ref ref="FILEOUT_ERROR" />
     </root>
 
